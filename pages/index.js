@@ -2,6 +2,7 @@ import React from 'react'
 import Typed from 'react-typed'
 import Head from 'next/head'
 import styles from './index.module.scss'
+import NavigationBar from '../components/Navigation'
 
 class App extends React.Component {
   render() {
@@ -25,6 +26,8 @@ class App extends React.Component {
           <meta name="og:title" content="Aaron Sinnott - Developer" />
           <meta name="twitter:card" content="blob:https://vercel.com/f3168933-9069-4c65-8e57-0fc645e97943" />
         </Head>
+
+        <NavigationBar />
         
         <section id="home" className={`${styles.header} ${styles.section}`}>
           <div className={styles.hero}>
