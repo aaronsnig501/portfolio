@@ -55,6 +55,24 @@ class App extends React.Component {
           <p>I spend my time working on personal projects that help me to automate time-consuming processes, learn how to use new technologies and work on projects that I feel could benefit myself and others.\n</p>
           <p>I love using Linux and I've worked primarily with Ubuntu with GNOME as my primary desktop OS for many years, and is my go to OS when setting up a new machine and have worked with Kubuntu and Manjaro.\</p>
         </section>
+
+        <section id="skills" className={styles.section}>
+          <h2>>>> # aaron_sinnott.skills</h2>
+
+          <h3>>>> aaron_sinnott.skills["python"]</h3>
+          <p>Over the years I have work primarily in Python and Django. In addition to this, I have also spent some time working with Flask and also some a little experience with some other frameworks like CherryPy and Bottle.\n</p>
+          <p>I've worked primarily with the Django ORM with MySQL databases, but I have also worked in PostreSQL and a little in MongoDB, with some experience with SQLAlchemy.\n</p>
+          <p>I have experience deploying these applications to both Heroku and AWS EC2, as well as automating build processes through Travis.\n</p>
+
+          <h3>>>> aaron_sinnott.skills["fullstack"]</h3>
+          <p>Most of the projects that I have worked on have all been across the fullstack, so I experience with HTML, CSS and Javascript. I have experience working on responsive sites with frameworks like Bootstrap and Materialize, as well a mobile-first principles when working with media queries.\n</p>
+          <p>I have recently been working in React and am currently working on building up some projects using React, Next.js and ES6+.\n</p>
+
+          <h3>>>> aaron_sinnott.skills["aws"]</h3>
+          <p>I have experience in working with multiple everyday AWS services like EC2, Route 53 and S3, as well as some extra services like Translate, Polly and Comprehend.\n</p>
+          <p>I have deployed Django and bottle applications to EC2 using Apache, React projects to Amplify and registered and assigned domains using Route 53.\n</p>
+          <p>I am also very interested in delving further into this in the future to look at extra automation services like CodeBuild, CodeDeploy, etc., so that I can manage all of my deployments using automation.\n</p>
+        </section>
       </div>
     );
   }

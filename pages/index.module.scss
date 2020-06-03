@@ -97,8 +97,8 @@ $screen-xl-min: 1200px;
     font-size: 0.9em;
 
     @include xl {
-      padding-top: 1.5%;
-      margin-top: 2.5%;
+      padding-top: 2.5%;
+      padding-bottom: 1%;
       font-size: 1.75em;
     }
   }
