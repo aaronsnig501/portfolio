@@ -161,3 +161,16 @@ $screen-xl-min: 1200px;
 }
 
 
+
+.footer {
+  background-color: #000;
+  color: #4AF626;
+  height: 50px;
+  margin-top: 2.5%;
+  padding-top: 2.25%;
+  
+  p {
+    text-align: center;
+    vertical-align: baseline;
+  }
+}

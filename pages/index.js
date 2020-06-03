@@ -151,6 +151,12 @@ class App extends React.Component {
           </form>
           
         </section>
+
+        <footer className={styles.footer}>
+          <p>
+            {'Copyright © Aaron Sinnott '}{new Date().getFullYear()}
+          </p>
+        </footer>
       </div>
     );
   }
