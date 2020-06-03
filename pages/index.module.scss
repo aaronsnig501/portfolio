@@ -131,6 +131,33 @@ $screen-xl-min: 1200px;
       padding-bottom: 1.5%;
     }
   }
+
+  form {
+    margin-top: 1.75%;
+  }
+
+  input {
+    height: 35px;
+  }
+
+  textarea {
+    height: 100px;
+  }
+
+  input, textarea {
+    margin: auto;
+    width: 50%;
+    margin-top: 0.5%;
+    margin-bottom: 0.5%;
+    display: block;
+  }
+
+  .formFeedback {
+    text-align: center;
+    width: 95%;
+    padding-top: 0;
+    padding-bottom: 1.25%;
+  }
 }
 
 

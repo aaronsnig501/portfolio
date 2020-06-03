@@ -7,15 +7,43 @@ import NavigationBar from '../components/Navigation'
 
 class App extends React.Component {
   state = {
-    "repos": []
+    'repos': [],
+    'email': '',
+    'name': '',
+    'message': '',
+    'response': ''
   }
 
   componentDidMount = async () => {
     let data = await fetch("https://api.github.com/users/aaronsnig501/repos");
 
     data.json().then((data) => {
-      this.setState({"repos": data});
+      this.setState({'repos': data});
     });
+  }
+
+  componentDidUpdate = () => {
+    console.dir(this.state.response)
+  }
+
+  handleSubmission = async e => {
+    e.preventDefault()
+
+    let data = {
+      'email': this.state.email,
+      'name': this.state.name,
+      'message': this.state.message
+    }
+
+    const requestOptions = {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json'},
+      body: JSON.stringify(data)
+    }
+
+    fetch(process.env.api, requestOptions)
+      .then(response => response.json())
+      .then(data => this.setState({'response': data['message']}))
   }
 
   render() {
@@ -107,6 +135,21 @@ class App extends React.Component {
               </div>
             )
           })}
+        </section>
+
+        <section id="contact" className={styles.section}>
+          <h2>>>> # aaron_sinnott.contact</h2>
+          
+          <h3>>>> aaron_sinnott.send_email(email, name, message)</h3>
+          <form>
+            <p className={styles.formFeedback}>{this.state.response}</p>
+            <input type="email" value={this.state.email} id="email" placeholder="Email" required onChange={e => this.setState({'email': e.target.value})} />
+            <input type="text" value={this.state.name} id="name" placeholder="Your name" required onChange={e => this.setState({'name': e.target.value})} />
+            <textarea value={this.state.message} placeholder="Your message" onChange={e => this.setState({'message': e.target.value})}></textarea>
+
+            <input type="submit" value="Submit" onClick={e => this.handleSubmission(e)}></input>
+          </form>
+          
         </section>
       </div>
     );
