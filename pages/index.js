@@ -1,209 +1,136 @@
+import React from "react";
+import ReactDOM from "react-dom";
+import ReactFullpage from "@fullpage/react-fullpage";
 import Head from 'next/head'
 
-export default function Home() {
-  return (
-    <div className="container">
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+// import 'fullpage.js/vendors/scrolloverflow'; // Optional. When using scrollOverflow:true
 
-      <main>
-        <h1 className="title">
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
+const originalColors = ['#ff5f45', '#0798ec', '#fc6c7c', '#435b71', 'orange', 'blue', 'purple', 'yellow'];
 
-        <p className="description">
-          Get started by editing <code>pages/index.js</code>
-        </p>
-
-        <div className="grid">
-          <a href="https://nextjs.org/docs" className="card">
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className="card">
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/zeit/next.js/tree/master/examples"
-            className="card"
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className="card"
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
-        </div>
-      </main>
-
-      <footer>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className="logo" />
-        </a>
-      </footer>
-
-      <style jsx>{`
-        .container {
-          min-height: 100vh;
-          padding: 0 0.5rem;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
+class App extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      sectionsColor: [...originalColors],
+      fullpages: [
+        {
+          text: "Section 1"
+        },
+        {
+          text: "Section 2"
+        },
+        {
+          text: 'Section 3',
         }
+      ]
+    };
+  }
 
-        main {
-          padding: 5rem 0;
-          flex: 1;
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-        }
+  onLeave(origin, destination, direction) {
+    console.log("onLeave", { origin, destination, direction });
+    // arguments are mapped in order of fullpage.js callback arguments do something
+    // with the event
+  }
 
-        footer {
-          width: 100%;
-          height: 100px;
-          border-top: 1px solid #eaeaea;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
+  handleChangeColors() {
+    const newColors =
+      this.state.sectionsColor[0] === "yellow"
+        ? [...originalColors]
+        : ["yellow", "blue", "white"];
+    this.setState({
+      sectionsColor: newColors
+    });
+  }
 
-        footer img {
-          margin-left: 0.5rem;
-        }
+  handleAddSection() {
+    this.setState(state => {
+      const { fullpages } = state;
+      const { length } = fullpages;
+      fullpages.push({
+        text: `section ${length + 1}`,
+        id: Math.random()
+      });
 
-        footer a {
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
+      return {
+        fullpages: [...fullpages]
+      };
+    });
+  }
 
-        a {
-          color: inherit;
-          text-decoration: none;
-        }
+  handleRemoveSection() {
+    this.setState(state => {
+      const { fullpages } = state;
+      const newPages = [...fullpages];
+      newPages.pop();
 
-        .title a {
-          color: #0070f3;
-          text-decoration: none;
-        }
+      return { fullpages: newPages };
+    });
+  }
 
-        .title a:hover,
-        .title a:focus,
-        .title a:active {
-          text-decoration: underline;
-        }
+  moveSectionDown(){
+    fullpage_api.moveSectionDown();
+  }
 
-        .title {
-          margin: 0;
-          line-height: 1.15;
-          font-size: 4rem;
-        }
+  render() {
+    const { fullpages } = this.state;
 
-        .title,
-        .description {
-          text-align: center;
-        }
+    if (!fullpages.length) {
+      return null;
+    }
 
-        .description {
-          line-height: 1.5;
-          font-size: 1.5rem;
-        }
+    const Menu = () => (
+      <div
+        className="menu"
+        style={{
+          position: "fixed",
+          top: 0,
+          zIndex: 100
+        }}
+      >
+        <ul className="actions">
+          <li>
+            <button onClick={() => this.handleAddSection()}>Add Section</button>
+            <button onClick={() => this.handleRemoveSection()}>
+              Remove Section
+            </button>
+            <button onClick={() => this.handleChangeColors()}>
+              Change background colors
+            </button>
+            <button onClick={() => this.moveSectionDown()}>
+              Move Section Down
+            </button>
+          </li>
+        </ul>
+      </div>
+    );
 
-        code {
-          background: #fafafa;
-          border-radius: 5px;
-          padding: 0.75rem;
-          font-size: 1.1rem;
-          font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
-            DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
-        }
+    return (
 
-        .grid {
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          flex-wrap: wrap;
-
-          max-width: 800px;
-          margin-top: 3rem;
-        }
-
-        .card {
-          margin: 1rem;
-          flex-basis: 45%;
-          padding: 1.5rem;
-          text-align: left;
-          color: inherit;
-          text-decoration: none;
-          border: 1px solid #eaeaea;
-          border-radius: 10px;
-          transition: color 0.15s ease, border-color 0.15s ease;
-        }
-
-        .card:hover,
-        .card:focus,
-        .card:active {
-          color: #0070f3;
-          border-color: #0070f3;
-        }
-
-        .card h3 {
-          margin: 0 0 1rem 0;
-          font-size: 1.5rem;
-        }
-
-        .card p {
-          margin: 0;
-          font-size: 1.25rem;
-          line-height: 1.5;
-        }
-
-        .logo {
-          height: 1em;
-        }
-
-        @media (max-width: 600px) {
-          .grid {
-            width: 100%;
-            flex-direction: column;
+      <div className="App">
+        <Head>
+          <title>My styled page</title>
+          <link href="/static/styles.css" rel="stylesheet" />
+        </Head>
+        <Menu />
+        <ReactFullpage
+          navigation
+          onLeave={this.onLeave.bind(this)}
+          sectionsColor={this.state.sectionsColor}
+          render={comp =>
+            console.log("render prop change") || (
+              <ReactFullpage.Wrapper>
+                {fullpages.map(({ text }) => (
+                  <div key={text} className="section">
+                    <h1>{text}</h1>
+                  </div>
+                ))}
+              </ReactFullpage.Wrapper>
+            )
           }
-        }
-      `}</style>
-
-      <style jsx global>{`
-        html,
-        body {
-          padding: 0;
-          margin: 0;
-          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
-            Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
-            sans-serif;
-        }
-
-        * {
-          box-sizing: border-box;
-        }
-      `}</style>
-    </div>
-  )
+        />
+      </div>
+    );
+  }
 }
+
+export default App;
