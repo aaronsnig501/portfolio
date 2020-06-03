@@ -12,10 +12,10 @@ class App extends React.Component {
           <link href="/static/styles.css" rel="stylesheet" />
         </Head>
         
-        <section id="home" className={styles.header}>
-          <div class="hero">
+        <section id="home" className={`${styles.header} ${styles.section}`}>
+          <div className={styles.hero}>
             <h1>>>> aaron_sinnott = Developer()</h1>
-            <p id="hero-paragraph">
+            <p className={styles.heroParagraph}>
               >>> <Typed strings={[
                 "aaron_sinnott.description = 'I build web stuff with Python, React and AWS!!!'"]} typeSpeed={70} /></p>
           </div>

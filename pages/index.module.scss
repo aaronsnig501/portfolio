@@ -39,14 +39,28 @@ $screen-xl-min: 1200px;
 }
 
 .header {
-  margin:0;
   background-color: #000;
   color: #4AF626;
   height: 100vh;
+}
+
+.section {
   padding-left: 2.5%;
   padding-right: 2.5%;
 
-  #hero-paragraph {
+  p {
+    font-size: 1em;
+    width: 100%;
+
+    @include xl {
+      padding-top: 0.75%;
+      padding-left: 2.5%;
+      font-size: 1em;
+      width: 70%;
+    }
+  }
+
+  .heroParagraph {
     padding-top: 1.5%;
     padding-left: 0;
     font-size: 0.75em;
@@ -78,11 +92,6 @@ $screen-xl-min: 1200px;
       font-size: 3.5em;
     }
   }
-}
-
-.section {
-  padding-left: 2.5%;
-  padding-right: 2.5%;
 }
 
 
