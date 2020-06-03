@@ -8,9 +8,22 @@ class App extends React.Component {
     return (
       <div className="App">
         <Head>
-          <title>My styled page</title>
-          <link href="/static/styles.css" rel="stylesheet" />
+          <title>Aaron Sinnott - Developer</title>
+          <link rel="icon" href="/favicon.ico" />
           <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hack-font@3/build/web/hack.css" />
+          <link rel="canonical" href="https://aaronsinnott.com/" />
+          <meta
+            name="description"
+            content="The portfolio site for Aaron Sinnott, Python, Django and React developer"
+          />
+          <meta name="robots" content="index, follow" />
+
+          <meta
+            property="og:image"
+            content={`blob:https://vercel.com/f3168933-9069-4c65-8e57-0fc645e97943`}
+          />
+          <meta name="og:title" content="Aaron Sinnott - Developer" />
+          <meta name="twitter:card" content="blob:https://vercel.com/f3168933-9069-4c65-8e57-0fc645e97943" />
         </Head>
         
         <section id="home" className={`${styles.header} ${styles.section}`}>
