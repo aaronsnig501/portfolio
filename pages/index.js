@@ -1,10 +1,23 @@
 import React from 'react'
+import fetch from 'node-fetch'
 import Typed from 'react-typed'
 import Head from 'next/head'
 import styles from './index.module.scss'
 import NavigationBar from '../components/Navigation'
 
 class App extends React.Component {
+  state = {
+    "repos": []
+  }
+
+  componentWillMount = async () => {
+    let data = await fetch("https://api.github.com/users/aaronsnig501/repos");
+
+    data.json().then((data) => {
+      this.setState({"repos": data});
+    });
+  }
+
   render() {
     return (
       <div className="App">
@@ -73,6 +86,28 @@ class App extends React.Component {
           <p>I have deployed Django and bottle applications to EC2 using Apache, React projects to Amplify and registered and assigned domains using Route 53.\n</p>
           <p>I am also very interested in delving further into this in the future to look at extra automation services like CodeBuild, CodeDeploy, etc., so that I can manage all of my deployments using automation.\n</p>
         </section>
+
+        <section id="portfolio" className={styles.section}>
+        <h2>>>> # aaron_sinnott.work</h2>
+
+        <h3>>>> aaron_sinnott.work["history"]</h3>
+        <p>The first project that I was assigned to work on was a Django project that was running on EC2s, with an Angular 1 frontend and PostgreSQL database with my second project also being a Django project which was hosted on Linode, which a pure HTML, CSS and JS/jQuery frontend and and MySQL database.\n</p>
+        <p>After this I spent some time working on a couple of C# projects, both on desktop, and an dashboard using ASP.NET MVC and ChartJS.\n</p>
+        <p>After working in .NET, I went back to working in Python and Django for Code Institute where I work on building learning material aimed at career changes that were new to coding. During this period, in addition to building course material, I also worked on the learning platform which is built in Django and hosted on EC2, with both a MySQL and MongoDB.\n</p>
+        <p>I left my role as a developer in Code Institute to move to Brazil to be with my girlfriend, but I continue to work with them as a mentor, helping students to build their projects to a professional standard, as well as offering career related advice, and mock interviewing them in preparation for real-world interviews.</p>
+        <p>In addition to mentoring, I've also been working on <a href="http://decyphr.net/">decyphr</a>, an app that I started to help myself to learn Portuguese, which I hope to be able to offer on a larger scale in the future.\n</p>
+
+        <h3>>>> aaron_sinnott.work["github"]</h3>
+      
+        {this.state.repos.map((repo, item) => {
+          return (
+            <div className={styles.github}>
+              <a class="github-link" href={repo.html_url} target="_blank" key={item}>{repo.name}</a>
+              <p>{repo.description}</p>
+            </div>
+          )
+        })}
+     </section>
       </div>
     );
   }

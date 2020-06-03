@@ -87,7 +87,7 @@ $screen-xl-min: 1200px;
     font-weight: 500;
     
     @include xl {
-      padding-top: 5%;
+      padding-top: 2.5%;
       font-size: 2.5em;
     }
   }
@@ -113,6 +113,22 @@ $screen-xl-min: 1200px;
       padding-left: 2.5%;
       font-size: 1em;
       width: 70%;
+    }
+  }
+
+  .github {
+    a {
+      padding-left: 2.5%;
+    }
+
+    a:visited {
+      color: blue;
+    }
+
+    p {
+      padding-left: 5%;
+      padding-top: 0.5%;
+      padding-bottom: 1.5%;
     }
   }
 }
