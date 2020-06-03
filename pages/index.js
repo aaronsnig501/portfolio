@@ -41,7 +41,7 @@ class App extends React.Component {
       body: JSON.stringify(data)
     }
 
-    fetch(process.env.api, requestOptions)
+    fetch(process.env.API, requestOptions)
       .then(response => response.json())
       .then(data => this.setState({'response': data['message']}))
   }
