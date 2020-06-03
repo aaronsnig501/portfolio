@@ -10,7 +10,7 @@ class App extends React.Component {
     "repos": []
   }
 
-  componentWillMount = async () => {
+  componentDidMount = async () => {
     let data = await fetch("https://api.github.com/users/aaronsnig501/repos");
 
     data.json().then((data) => {
@@ -102,7 +102,7 @@ class App extends React.Component {
         {this.state.repos.map((repo, item) => {
           return (
             <div className={styles.github}>
-              <a class="github-link" href={repo.html_url} target="_blank" key={item}>{repo.name}</a>
+              <a href={repo.html_url} target="_blank" key={item}>{repo.name}</a>
               <p>{repo.description}</p>
             </div>
           )
