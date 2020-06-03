@@ -10,6 +10,7 @@ class App extends React.Component {
         <Head>
           <title>My styled page</title>
           <link href="/static/styles.css" rel="stylesheet" />
+          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hack-font@3/build/web/hack.css" />
         </Head>
         
         <section id="home" className={`${styles.header} ${styles.section}`}>
