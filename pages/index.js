@@ -103,7 +103,7 @@ class App extends React.Component {
           <p>Almost all of the projects that I've worked on have been hosted on AWS EC2s, with a C# project that ran on Azure.\n</p>
           <p>In addition to development work, I have also work in education and creating course material for Code Institute. And I've worked as mentor, mentoring students to ensure that their projects and code (include their testing, documentation and git usage) met a professional standard.\n</p>
           <p>I spend my time working on personal projects that help me to automate time-consuming processes, learn how to use new technologies and work on projects that I feel could benefit myself and others.\n</p>
-          <p>I love using Linux and I've worked primarily with Ubuntu with GNOME as my primary desktop OS for many years, and is my go to OS when setting up a new machine and have worked with Kubuntu and Manjaro.\</p>
+          <p>I love using Linux and I've worked primarily with Ubuntu with GNOME as my primary desktop OS for many years, and is my go to OS when setting up a new machine and have worked with Kubuntu and Manjaro.\n</p>
         </section>
 
         <section id="skills" className={styles.section}>
