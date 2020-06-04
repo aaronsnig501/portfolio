@@ -2,6 +2,7 @@ import React from 'react'
 import fetch from 'node-fetch'
 import Typed from 'react-typed'
 import Head from 'next/head'
+import Router from 'next/router'
 import styles from './index.module.scss'
 import NavigationBar from '../components/Navigation'
 
@@ -15,6 +16,7 @@ class App extends React.Component {
   }
 
   componentDidMount = async () => {
+    window.addEventListener('keyup', this.upHandler)
     let data = await fetch("https://api.github.com/users/aaronsnig501/repos");
 
     data.json().then((data) => {
@@ -24,6 +26,12 @@ class App extends React.Component {
 
   componentDidUpdate = () => {
     console.dir(this.state.response)
+  }
+
+  upHandler = e => {
+    if (e.altKey && e.key === 't') {
+      Router.push('/terminal')
+    }
   }
 
   handleSubmission = async e => {
@@ -46,6 +54,7 @@ class App extends React.Component {
       .then(data => this.setState({'response': data['message']}))
   }
 
+  
   render() {
     return (
       <div className="App">
@@ -70,7 +79,7 @@ class App extends React.Component {
 
         <NavigationBar />
         
-        <section id="home" className={`${styles.header} ${styles.section}`}>
+        <section id="home" className={`${styles.header} ${styles.section}`} onKeyUp={this.handleKeyPress}>
           <div className={styles.hero}>
             <h1>>>> aaron_sinnott = Developer()</h1>
             <p className={styles.heroParagraph}>
