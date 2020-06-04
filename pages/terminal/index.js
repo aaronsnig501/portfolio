@@ -27,9 +27,7 @@ export default function TerminalView() {
         commands={{
           'exit': () => Router.push('/'),
           'dir': () => 'Sorry, unix commands only',
-          'ls': ls,
-          showmsg: showMsg,
-          popup: () => alert('Terminal in React')
+          'ls': ls
         }}
         
         descriptions={{
