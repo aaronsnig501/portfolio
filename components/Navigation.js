@@ -47,9 +47,9 @@ export default class NavigationBar extends React.Component {
           <li><a href="#contact">~/contact</a></li>
         </ul>
   
-        <a className="icon" onClick={this.showLinks}>
+        <span className="icon" onClick={this.showLinks}>
           {this.state.navText}
-        </a>
+        </span>
       </nav>
     );
   }

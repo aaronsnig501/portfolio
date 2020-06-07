@@ -64,6 +64,13 @@ nav {
 
   ul {
     display: none;
+    background-color: #000;
+    width: 40%;
+    float: right;
+
+    @include md {
+      width: 20%;
+    }
   }
 
   ul:first-child {
@@ -79,25 +86,16 @@ nav {
   }
 
   li {
-    padding-top: 7.5%;
-    
+    padding-top: 10%;
+    display: block;    
 
     @include md {
-      padding-top: 5%;
+      padding-top: 10%;
     }
 
     @include xl {
       padding-top: 1.75%;
     }
-  }
-
-  a {
-    color: #4AF626;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-    display: block;
-    float: right;
   }
 
   .icon {
@@ -109,6 +107,21 @@ nav {
     top: 0;
     padding-top: 1%;
     padding-bottom: 1%;
+    padding-right: 4%;
+    padding-left: 4%;
+  }
+
+  a {
+    color: #4AF626;
+    padding: 5% 20%;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    float: right;
+
+    @include md {
+      
+    }
   }
 
   a:hover {
