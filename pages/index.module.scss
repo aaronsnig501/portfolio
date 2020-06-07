@@ -48,6 +48,10 @@ $screen-xl-min: 1200px;
   padding-left: 2.5%;
   padding-right: 2.5%;
 
+  @include md {
+    min-height: 100vh;
+  }
+
   .heroParagraph {
     padding-top: 1.5%;
     padding-left: 0;
@@ -83,12 +87,17 @@ $screen-xl-min: 1200px;
 
   h2 {
     padding: 12.5% 2.5% 0 2.5%;
-    font-size: 1em;
-    font-weight: 500;
+    font-size: 1.2em;
+    font-weight: 600;
 
     @include md {
       padding-top: 5%;
       font-size: 2.25em;
+    }
+
+    @include lg {
+      padding-top: 2.5%;
+      font-size: 2.5em;
     }
     
     @include xl {
@@ -100,14 +109,21 @@ $screen-xl-min: 1200px;
   h3 {
     padding: 10% 2.5% 2.5% 2.5%;
     font-size: 0.9em;
+    font-weight: 300;
 
     @include md {
-      padding-top: 5%;
+      padding-top: 7.5%;
       font-size: 1.25em;
+    }
+    
+    @include lg {
+      padding-top: 6.5%;
+      padding-bottom: 1%;
+      font-size: 1.75em;
     }
 
     @include xl {
-      padding-top: 2.5%;
+      padding-top: 2.25%;
       padding-bottom: 1%;
       font-size: 1.75em;
     }
@@ -122,11 +138,18 @@ $screen-xl-min: 1200px;
       padding-top: 3%;
     }
 
-    @include xl {
-      padding-top: 1.5%;
+    @include lg {
+      padding-top: 2%;
       padding-left: 2.5%;
       font-size: 1em;
-      width: 70%;
+      width: 90%;
+    }
+
+    @include xl {
+      padding-top: 2%;
+      padding-left: 2.5%;
+      font-size: 1em;
+      width: 80%;
     }
   }
 
