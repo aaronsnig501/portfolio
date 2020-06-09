@@ -151,9 +151,30 @@ class App extends React.Component {
           <h3>>>> aaron_sinnott.send_email(email, name, message)</h3>
           <form>
             <p className={styles.formFeedback}>{this.state.response}</p>
-            <input type="email" value={this.state.email} id="email" placeholder="Email" required onChange={e => this.setState({'email': e.target.value})} />
-            <input type="text" value={this.state.name} id="name" placeholder="Your name" required onChange={e => this.setState({'name': e.target.value})} />
-            <textarea value={this.state.message} placeholder="Your message" onChange={e => this.setState({'message': e.target.value})}></textarea>
+            <input
+              type="email"
+              value={this.state.email}
+              id="email"
+              placeholder="Email"
+              required
+              onChange={e => this.setState({'email': e.target.value})}
+              aria-label="Your Email"
+            />
+            <input
+              type="text"
+              value={this.state.name}
+              id="name"
+              placeholder="Your name"
+              required
+              onChange={e => this.setState({'name': e.target.value})}
+              aria-label="Your name"
+            />
+            <textarea
+              value={this.state.message}
+              placeholder="Your message"
+              onChange={e => this.setState({'message': e.target.value})}
+              aria-label="Your message"
+            ></textarea>
 
             <input type="submit" value="Submit" onClick={e => this.handleSubmission(e)}></input>
           </form>
