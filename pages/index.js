@@ -61,7 +61,6 @@ class App extends React.Component {
         <Head>
           <title>Aaron Sinnott - Developer</title>
           <link rel="icon" href="/favicon.ico" />
-          <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/hack-font@3/build/web/hack.css" />
           <link rel="canonical" href="https://aaronsinnott.com/" />
           <meta
             name="description"

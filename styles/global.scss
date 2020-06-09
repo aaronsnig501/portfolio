@@ -38,10 +38,20 @@ $screen-xl-min: 1200px;
   }
 }
 
+@font-face {
+  font-family: 'Hack';
+  src: url('/fonts/ttf/Hack-Bold.ttf');
+  src: url('/fonts/ttf/Hack-BoldItalic.ttf');
+  src: url('/fonts/ttf/Hack-Italic.ttf');
+  src: url('/fonts/ttf/Hack-Regular.ttf');
+  font-display: swap;
+}
+
 * {
   margin: 0 0 0 0;
   padding: 0;
   font-family: 'Hack';
+  font-display: swap;
 }
 
 html {
