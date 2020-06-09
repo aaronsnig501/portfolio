@@ -138,7 +138,7 @@ class App extends React.Component {
           {this.state.repos.map((repo, item) => {
             return (
               <div key={item} className={styles.github}>
-                <a href={repo.html_url} target="_blank">{repo.name}</a>
+                <a href={repo.html_url} target="_blank" rel="noreferrer">{repo.name}</a>
                 <p>{repo.description}</p>
               </div>
             )
