@@ -14,7 +14,6 @@
     "node-fetch": "^2.6.0",
     "react": "16.13.1",
     "react-dom": "16.13.1",
-    "react-intl": "^4.6.6",
     "react-typed": "^1.2.0",
     "terminal-in-react": "^4.3.1",
     "terminal-in-react-pseudo-file-system-plugin": "^3.0.0"
