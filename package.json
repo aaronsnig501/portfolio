@@ -15,6 +15,7 @@
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-typed": "^1.2.0",
+    "swr": "^0.2.2",
     "terminal-in-react": "^4.3.1",
     "terminal-in-react-pseudo-file-system-plugin": "^3.0.0"
   },

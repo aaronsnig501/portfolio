@@ -3,6 +3,7 @@ import fetch from 'node-fetch'
 import Typed from 'react-typed'
 import Head from 'next/head'
 import Router from 'next/router'
+import useSWR from 'swr'
 import styles from './index.module.scss'
 import NavigationBar from '../../components/Navigation'
 import withLocale from '../../hocs/withLocale'
@@ -28,17 +29,13 @@ const App: React.FC = () => {
   const [name, setName] = React.useState<string>('')
   const [message, setMessage] = React.useState<string>('')
   const [response, setResponse] = React.useState<string>('')
+
+  const fetcher = url => fetch(url)
+    .then(r => r.json())
+    .then(data => setRepos(data.map((repo: any) => formatRepo(repo))))
+
+  const { data } = useSWR('https://api.github.com/users/aaronsnig501/repos', fetcher)
   const { t } = useTranslation()
-
-  React.useEffect(() => {
-    const getGithubData = async url => {
-      await fetch(url)
-        .then(response => response.json())
-        .then(data => setRepos(data.map((repo: any) => formatRepo(repo))))
-    }
-
-    getGithubData("https://api.github.com/users/aaronsnig501/repos")
-  }, [repos])
 
   React.useEffect(() => {}, [response])
 
