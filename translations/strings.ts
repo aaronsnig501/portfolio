@@ -30,7 +30,17 @@ const strings: Strings = {
     skillsAWSHeader: 'aaron_sinnott.skills["aws"]',
     skillsAWSParagraphOne: 'I have experience in working with multiple everyday AWS services like EC2, Route 53 and S3, as well as some extra services like Translate, Polly and Comprehend.\\n',
     skillsAWSParagraphTwo: 'I have deployed Django and Bottle applications to EC2 using Apache, React projects to Amplify and registered and assigned domains using Route 53.\\n',
-    skillsAWSParagraphThree: 'I am also very interested in delving further into this in the future to look at extra automation services like CodeBuild, CodeDeploy, etc., so that I can manage all of my deployments using automation.\\n'
+    skillsAWSParagraphThree: 'I am also very interested in delving further into this in the future to look at extra automation services like CodeBuild, CodeDeploy, etc., so that I can manage all of my deployments using automation.\\n',
+
+    workHeader: 'aaron_sinnott.work',
+    workHistoryHeader: 'aaron_sinnott.work["history"]',
+    workHistoryParagraphOne: 'The first project that I was assigned to work on was a Django project that was running on EC2s, with an Angular 1 frontend and PostgreSQL database with my second project also being a Django project which was hosted on Linode, which a pure HTML, CSS and JS/jQuery frontend and and MySQL database.\\n',
+    workHistoryParagraphTwo: 'After this I spent some time working on a couple of C# projects, both on desktop, and an dashboard using ASP.NET MVC and ChartJS.\\n',
+    workHistoryParagraphThree: 'After working in .NET, I went back to working in Python and Django for Code Institute where I work on building learning material aimed at career changes that were new to coding. During this period, in addition to building course material, I also worked on the learning platform which is built in Django and hosted on EC2, with both a MySQL and MongoDB.\\n',
+    workHistoryParagraphFour: 'I left my role as a developer in Code Institute to move to Brazil to be with my fiance, but I continue to work with them as a mentor, helping students to build their projects to a professional standard, as well as offering career related advice, and mock interviewing them in preparation for real-world interviews.\\n',
+    workHistoryParagraphFivePartOne: 'In addition to mentoring, I have also been working on ',
+    workHistoryParagraphFivePartTwo: ', an app that I started to help myself to learn Portuguese, which I hope to be able to offer on a larger scale in the future.\\n',
+    workGithubHeader: 'aaron_sinnott.work["github"]'
   },
   pt: {
     heroHeading: 'aaron_sinnott = Desenvolvedor()',
@@ -57,11 +67,21 @@ const strings: Strings = {
     skillsPythonParagraphThree: 'Tenho experiência em implantar esses aplicativos no Heroku e no AWS EC2, além de automatizar processos de compilação por meio do Travis.\\n',
     skillsFullstackHeader: 'aaron_sinnott.habilidades["fullstack"]',
     skillsFullstackParagraphOne: 'A maioria dos projetos em que trabalhei foram realizados no fullstack, por isso tenho experiência com HTML, CSS e Javascript. Tenho experiência trabalhando em sites responsivos com estruturas como o Bootstrap e o Materialize, bem como um princípio móvel antes de trabalhar com consultas de mídia.\\n',
-    skillsFullstackParagraphTwo: 'Estive recentemente trabalhando no React e atualmente estou desenvolvendo alguns projetos usando o React, Next.js e TypeScript',
+    skillsFullstackParagraphTwo: 'Estive recentemente trabalhando no React e atualmente estou desenvolvendo alguns projetos usando o React, Next.js e TypeScript.\\n',
     skillsAWSHeader: 'aaron_sinnott.habilidades["aws"]',
     skillsAWSParagraphOne: 'Tenho experiência em trabalhar com vários serviços da AWS todos os dias, como EC2, Route 53 e S3, além de alguns serviços extras, como Translate, Polly e Comprehend.\\n',
     skillsAWSParagraphTwo: 'Implantei aplicativos Django e Bottle no EC2 usando o Apache, React projetos para amplificar e domínios registrados e atribuídos usando o Route 53.\\n',
-    skillsAWSParagraphThree: 'Também estou muito interessado em aprofundar isso no futuro, procurando serviços extras de automação, como CodeBuild, CodeDeploy, etc., para que eu possa gerenciar todas as minhas implantações usando a automação.\\n'
+    skillsAWSParagraphThree: 'Também estou muito interessado em aprofundar isso no futuro, procurando serviços extras de automação, como CodeBuild, CodeDeploy, etc., para que eu possa gerenciar todas as minhas implantações usando a automação.\\n',
+
+    workHeader: 'aaron_sinnott.trabalhos',
+    workHistoryHeader: 'aaron_sinnott.trabalhos["história"]',
+    workHistoryParagraphOne: 'O primeiro projeto no qual fui designado para trabalhar foi um projeto Django que estava sendo executado em EC2s, com um front-end Angular 1 e banco de dados PostgreSQL, com meu segundo projeto também sendo um projeto Django hospedado no Linode, que era um HTML puro, CSS e Frontend JS/jQuery e banco de dados MySQL.\\n',
+    workHistoryParagraphTwo: 'Depois disso, passei algum tempo trabalhando em alguns projetos de C#, tanto na área de trabalho quanto em um painel usando o ASP.NET MVC e ChartJS.\\n',
+    workHistoryParagraphThree: 'Depois de trabalhar no .NET, voltei a trabalhar no Python e no Django para o Code Institute, onde trabalho na construção de material de aprendizado voltado para mudanças de carreira que eram novas na codificação. Durante esse período, além de criar o material do curso, também trabalhei na plataforma de aprendizado que é construída no Django e hospedada no EC2, com MySQL e MongoDB.\\n',
+    workHistoryParagraphFour: 'Deixei minha função de desenvolvedor no Code Institute para me mudar para o Brasil para ficar com minha noiva, mas continuo trabalhando com eles como mentor, ajudando os alunos a desenvolver seus projetos com um padrão profissional, além de oferecer conselhos relacionados à carreira, e simulá-los em preparação para entrevistas no mundo real.\\n',
+    workHistoryParagraphFivePartOne: 'Além de orientar, também tenho trabalhado no ',
+    workHistoryParagraphFivePartTwo: ', um aplicativo que comecei a me ajudar a aprender português, que espero poder para oferecer em uma escala maior no futuro.\\n',
+    workGithubHeader: 'aaron_sinnott.trabalhos["github"]'
   }
 }
 

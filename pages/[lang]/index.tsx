@@ -136,16 +136,19 @@ const App: React.FC = () => {
       </section>
 
       <section id="portfolio" className={styles.section}>
-        <h2>&gt;&gt;&gt; # aaron_sinnott.work</h2>
+        <h2># {t("workHeader")}</h2>
 
-        <h3>&gt;&gt;&gt; aaron_sinnott.work["history"]</h3>
-        <p>The first project that I was assigned to work on was a Django project that was running on EC2s, with an Angular 1 frontend and PostgreSQL database with my second project also being a Django project which was hosted on Linode, which a pure HTML, CSS and JS/jQuery frontend and and MySQL database.\n</p>
-        <p>After this I spent some time working on a couple of C# projects, both on desktop, and an dashboard using ASP.NET MVC and ChartJS.\n</p>
-        <p>After working in .NET, I went back to working in Python and Django for Code Institute where I work on building learning material aimed at career changes that were new to coding. During this period, in addition to building course material, I also worked on the learning platform which is built in Django and hosted on EC2, with both a MySQL and MongoDB.\n</p>
-        <p>I left my role as a developer in Code Institute to move to Brazil to be with my girlfriend, but I continue to work with them as a mentor, helping students to build their projects to a professional standard, as well as offering career related advice, and mock interviewing them in preparation for real-world interviews.</p>
-        <p>In addition to mentoring, I've also been working on <a href="http://decyphr.net/">decyphr</a>, an app that I started to help myself to learn Portuguese, which I hope to be able to offer on a larger scale in the future.\n</p>
+        <h3>&gt;&gt;&gt; {t("workHistoryHeader")}</h3>
+        <p>{t("workHistoryParagraphOne")}</p>
+        <p>{t("workHistoryParagraphTwo")}</p>
+        <p>{t("workHistoryParagraphThree")}</p>
+        <p>{t("workHistoryParagraphFour")}</p>
+        <p>
+          {t("workHistoryParagraphFivePartOne")}
+          <a href="http://decyphr.net/" target="_blank" rel="noreferrer">decyphr</a>
+          {t("workHistoryParagraphFivePartTwo")}</p>
 
-        <h3>&gt;&gt;&gt; aaron_sinnott.work["github"]</h3>
+        <h3>&gt;&gt;&gt; {t("workGithubHeader")}</h3>
       
         {repos.map((repo, item) => {
           return (
