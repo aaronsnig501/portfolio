@@ -17,7 +17,20 @@ const strings: Strings = {
     aboutTechnicalParagraphTwo: 'Almost all of the projects that I have worked on have been hosted on AWS EC2s, with a C# project that ran on Azure.\\n',
     aboutTechnicalParagraphThree: 'In addition to development work, I have also work in education and creating course material for Code Institute. And I have worked as mentor, mentoring students to ensure that their projects and code (include their testing, documentation and git usage) met a professional standard.\\n',
     aboutTechnicalParagraphFour: 'I spend my time working on personal projects that help me to automate time-consuming processes, learn how to use new technologies and work on projects that I feel could benefit myself and others.\\n',
-    aboutTechnicalParagraphFive: 'I love using Linux and I work primarily with Ubuntu with GNOME as my primary desktop OS for many years, and is my go to OS when setting up a new machine and have worked with Kubuntu and Manjaro.\\n'
+    aboutTechnicalParagraphFive: 'I love using Linux and I work primarily with Ubuntu with GNOME as my primary desktop OS for many years, and is my go to OS when setting up a new machine and have worked with Kubuntu and Manjaro.\\n',
+
+    skillsHeader: 'aaron_sinnott.skills',
+    skillsPythonHeader: 'aaron_sinnott.skills["python"]',
+    skillsPythonParagraphOne: 'Over the years I have work primarily in Python and Django. In addition to this, I have also spent some time working with Flask and also some a little experience with some other frameworks like CherryPy and Bottle.\\n',
+    skillsPythonParagraphTwo: 'I have worked primarily with the Django ORM with MySQL databases, but I have also worked in PostreSQL and a little in MongoDB, with some experience with SQLAlchemy.\\n',
+    skillsPythonParagraphThree: 'I have experience deploying these applications to both Heroku and AWS EC2, as well as automating build processes through Travis.\\n',
+    skillsFullstackHeader: 'aaron_sinnott.skills["fullstack"]',
+    skillsFullstackParagraphOne: 'Most of the projects that I have worked on have all been across the fullstack, so I experience with HTML, CSS and Javascript. I have experience working on responsive sites with frameworks like Bootstrap and Materialize, as well a mobile-first principles when working with media queries.\\n',
+    skillsFullstackParagraphTwo: 'I have recently been working in React and am currently working on building up some projects using React, Next.js and TypeScript.\\n',
+    skillsAWSHeader: 'aaron_sinnott.skills["aws"]',
+    skillsAWSParagraphOne: 'I have experience in working with multiple everyday AWS services like EC2, Route 53 and S3, as well as some extra services like Translate, Polly and Comprehend.\\n',
+    skillsAWSParagraphTwo: 'I have deployed Django and Bottle applications to EC2 using Apache, React projects to Amplify and registered and assigned domains using Route 53.\\n',
+    skillsAWSParagraphThree: 'I am also very interested in delving further into this in the future to look at extra automation services like CodeBuild, CodeDeploy, etc., so that I can manage all of my deployments using automation.\\n'
   },
   pt: {
     heroHeading: 'aaron_sinnott = Desenvolvedor()',
@@ -35,7 +48,20 @@ const strings: Strings = {
     aboutTechnicalParagraphTwo: 'Quase todos os projetos nos quais trabalhei foram hospedados no AWS EC2s, com um projeto C# executado no Azure.\\n',
     aboutTechnicalParagraphThree: 'Além do trabalho de desenvolvimento, também trabalhei em educação e criação de material de curso para o Code Institute. E trabalhei como mentor, orientando alunos para garantir que seus projetos e códigos (incluindo testes, documentação e uso de git) atendessem a um padrão profissional.\\n',
     aboutTechnicalParagraphFour: 'Passo meu tempo trabalhando em projetos pessoais que me ajudam a automatizar processos demorados, aprender a usar novas tecnologias e trabalhar em projetos que, em minha opinião, poderiam beneficiar a mim e a outros.\\n',
-    aboutTechnicalParagraphFive: 'Adoro usar o Linux e trabalho principalmente com o Ubuntu com o GNOME como meu sistema operacional principal por muitos anos, e vou para o SO ao configurar uma nova máquina e trabalhei com o Kubuntu e o Manjaro.\\n'
+    aboutTechnicalParagraphFive: 'Adoro usar o Linux e trabalho principalmente com o Ubuntu com o GNOME como meu sistema operacional principal por muitos anos, e vou para o SO ao configurar uma nova máquina e trabalhei com o Kubuntu e o Manjaro.\\n',
+
+    skillsHeader: 'aaron_sinnott.habilidades',
+    skillsPythonHeader: 'aaron_sinnott.habilidades["python"]',
+    skillsPythonParagraphOne: 'Ao longo dos anos, trabalho principalmente em Python e Django. Além disso, também passei algum tempo trabalhando com o Flask e também um pouco de experiência com outras estruturas, como CherryPy e Bottle.\\n',
+    skillsPythonParagraphTwo: 'Trabalhei principalmente com o Django ORM com bancos de dados MySQL, mas também trabalhei no PostreSQL e um pouco no MongoDB, com alguma experiência com o SQLAlchemy.\\n',
+    skillsPythonParagraphThree: 'Tenho experiência em implantar esses aplicativos no Heroku e no AWS EC2, além de automatizar processos de compilação por meio do Travis.\\n',
+    skillsFullstackHeader: 'aaron_sinnott.habilidades["fullstack"]',
+    skillsFullstackParagraphOne: 'A maioria dos projetos em que trabalhei foram realizados no fullstack, por isso tenho experiência com HTML, CSS e Javascript. Tenho experiência trabalhando em sites responsivos com estruturas como o Bootstrap e o Materialize, bem como um princípio móvel antes de trabalhar com consultas de mídia.\\n',
+    skillsFullstackParagraphTwo: 'Estive recentemente trabalhando no React e atualmente estou desenvolvendo alguns projetos usando o React, Next.js e TypeScript',
+    skillsAWSHeader: 'aaron_sinnott.habilidades["aws"]',
+    skillsAWSParagraphOne: 'Tenho experiência em trabalhar com vários serviços da AWS todos os dias, como EC2, Route 53 e S3, além de alguns serviços extras, como Translate, Polly e Comprehend.\\n',
+    skillsAWSParagraphTwo: 'Implantei aplicativos Django e Bottle no EC2 usando o Apache, React projetos para amplificar e domínios registrados e atribuídos usando o Route 53.\\n',
+    skillsAWSParagraphThree: 'Também estou muito interessado em aprofundar isso no futuro, procurando serviços extras de automação, como CodeBuild, CodeDeploy, etc., para que eu possa gerenciar todas as minhas implantações usando a automação.\\n'
   }
 }
 
