@@ -1,6 +1,6 @@
-import React from "react";
+import React from 'react'
 
-export default function NavigationBar() {
+const NavigationBar: React.FC = () => {
   const [navText, setNavText] = React.useState('ls')
 
   const toggleMenu = () => {
@@ -8,7 +8,7 @@ export default function NavigationBar() {
     let nav = document.getElementById('nav')
 
     if (links.style.display === 'block') {
-      closeMenu(links, nav)
+      closeMenu()
     } else {
       openMenu(links, nav)
     }
@@ -45,3 +45,5 @@ export default function NavigationBar() {
     </nav>
   );
 }
+
+export default NavigationBar
