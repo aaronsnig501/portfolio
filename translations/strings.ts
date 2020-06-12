@@ -4,18 +4,38 @@ const strings: Strings = {
   en: {
     heroHeading: 'aaron_sinnott = Developer()',
     heroParagraph: 'aaron_sinnott.description = \'I build web stuff with Python, React and AWS!!!\'',
+    
     aboutHeader: 'aaron_sinnott.about',
-    notAPipe: 'This is not a pipe',
-    bio: `René François Ghislain Magritte (21 November 1898 – 15 August 1967) was a Belgian Surrealist artist. He became well known for creating a number of witty and thought-provoking images. Often depicting ordinary objects in an unusual context, his work is known for challenging observers' preconditioned perceptions of reality. His imagery has influenced pop art, minimalist art and conceptual art.`,
-    readMore: 'Read more on Wikipedia...'
+    aboutOverviewHeader: 'aaron_sinnott.about["overview"]',
+    aboutOverviewParagraphOne: 'I am a Python developer from the south-east of Ireland and currently living in São Paulo.\\n',
+    aboutOverviewParagraphTwo: 'I have spent 7 years working almost exclusively in Python and Django, with some experience in .NET, and more recently, ReactJS.\\n',
+    aboutOverviewParagraphThree: 'I have a passion for working across the full stack and love to learn all I can about the best practices in whatever the technology may be.\\n',
+    aboutOverviewParagraphFour: 'I love learning about new development processes and the automation of those processes to enable me to be as productive as possible, whether it\'s automated deployments, or the automated generation of documentation.\\n',
+    aboutOverviewParagraphFive: 'And aside from computing, I love music and have been playing guitar since I was young. I enjoy sitting down to create and record new music with friends!\\n',
+    aboutTechnicalHeader: 'aaron_sinnott.about["technical"]',
+    aboutTechnicalParagraphOne: 'The primary stack that I have worked with throughout my career has the Python/Django with MySQL databases running on Ubuntu.\\n',
+    aboutTechnicalParagraphTwo: 'Almost all of the projects that I have worked on have been hosted on AWS EC2s, with a C# project that ran on Azure.\\n',
+    aboutTechnicalParagraphThree: 'In addition to development work, I have also work in education and creating course material for Code Institute. And I have worked as mentor, mentoring students to ensure that their projects and code (include their testing, documentation and git usage) met a professional standard.\\n',
+    aboutTechnicalParagraphFour: 'I spend my time working on personal projects that help me to automate time-consuming processes, learn how to use new technologies and work on projects that I feel could benefit myself and others.\\n',
+    aboutTechnicalParagraphFive: 'I love using Linux and I work primarily with Ubuntu with GNOME as my primary desktop OS for many years, and is my go to OS when setting up a new machine and have worked with Kubuntu and Manjaro.\\n'
   },
   pt: {
     heroHeading: 'aaron_sinnott = Desenvolvedor()',
     heroParagraph: 'aaron_sinnott.descrição = \'Eu construo coisas da web com Python, React e AWS!!!\'',
+    
     aboutHeader: 'aaron_sinnott.sobre',
-    notAPipe: 'This is not a pipe',
-    bio: `René François Ghislain Magritte (21 November 1898 – 15 August 1967) was a Belgian Surrealist artist. He became well known for creating a number of witty and thought-provoking images. Often depicting ordinary objects in an unusual context, his work is known for challenging observers' preconditioned perceptions of reality. His imagery has influenced pop art, minimalist art and conceptual art.`,
-    readMore: 'Read more on Wikipedia...'
+    aboutOverviewHeader: 'aaron_sinnott.sobre["visão_geral"]',
+    aboutOverviewParagraphOne: 'Sou desenvolvedor Python do sudeste da Irlanda e moro atualmente em São Paulo.\\n',
+    aboutOverviewParagraphTwo: 'Passei 7 anos trabalhando quase exclusivamente em Python e Django, com alguma experiência em .NET e, mais recentemente, em ReactJS.\\n',
+    aboutOverviewParagraphThree: 'Tenho uma paixão por trabalhar em toda a pilha e adoro aprender tudo o que posso sobre as melhores práticas em qualquer que seja a tecnologia.\\n',
+    aboutOverviewParagraphFour: 'Adoro aprender sobre novos processos de desenvolvimento e a automação desses processos para me permitir ser o mais produtivo possível, sejam implantações automatizadas ou a geração automatizada de documentação.\\n',
+    aboutOverviewParagraphFive: 'E além da computação, eu amo música e toco violão desde jovem. Gosto de criar e gravar novas músicas com os amigos!\\n',
+    aboutTechnicalHeader: 'aaron_sinnott.sobre["técnico"]',
+    aboutTechnicalParagraphOne: 'A pilha principal com a qual trabalhei ao longo da minha carreira tem os bancos de dados Python/Django com MySQL em execução no Ubuntu.\\n',
+    aboutTechnicalParagraphTwo: 'Quase todos os projetos nos quais trabalhei foram hospedados no AWS EC2s, com um projeto C# executado no Azure.\\n',
+    aboutTechnicalParagraphThree: 'Além do trabalho de desenvolvimento, também trabalhei em educação e criação de material de curso para o Code Institute. E trabalhei como mentor, orientando alunos para garantir que seus projetos e códigos (incluindo testes, documentação e uso de git) atendessem a um padrão profissional.\\n',
+    aboutTechnicalParagraphFour: 'Passo meu tempo trabalhando em projetos pessoais que me ajudam a automatizar processos demorados, aprender a usar novas tecnologias e trabalhar em projetos que, em minha opinião, poderiam beneficiar a mim e a outros.\\n',
+    aboutTechnicalParagraphFive: 'Adoro usar o Linux e trabalho principalmente com o Ubuntu com o GNOME como meu sistema operacional principal por muitos anos, e vou para o SO ao configurar uma nova máquina e trabalhei com o Kubuntu e o Manjaro.\\n'
   }
 }
 
