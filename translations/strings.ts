@@ -2,6 +2,9 @@ import { Strings } from './types'
 
 const strings: Strings = {
   en: {
+    title: 'aaron_sinnott = Developer()',
+    description: 'The portfolio site for Aaron Sinnott. Python, Django and React developer',
+
     heroHeading: 'aaron_sinnott = Developer()',
     heroParagraph: 'aaron_sinnott.description = \'I build web stuff with Python, React and AWS!!!\'',
     
@@ -50,6 +53,9 @@ const strings: Strings = {
     contactSubmitButton: 'Submit'
   },
   pt: {
+    title: 'aaron_sinnott = Desenvolvedor()',
+    description: 'O site do portfólio do Aaron Sinnott. Desenvolvedor Python, Django e React',
+
     heroHeading: 'aaron_sinnott = Desenvolvedor()',
     heroParagraph: 'aaron_sinnott.descrição = \'Eu construo coisas da web com Python, React e AWS!!!\'',
     

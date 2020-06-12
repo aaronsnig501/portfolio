@@ -72,12 +72,12 @@ const App: React.FC = () => {
   return (
     <div className="App">
       <Head>
-        <title>Aaron Sinnott - Developer</title>
+        <title>{t("title")}</title>
         <link rel="icon" href="/favicon.ico" />
         <link rel="canonical" href="https://aaronsinnott.com/" />
         <meta
           name="description"
-          content="The portfolio site for Aaron Sinnott, Python, Django and React developer"
+          content={t("description")}
         />
         <meta name="robots" content="index, follow" />
 
