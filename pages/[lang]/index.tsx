@@ -161,37 +161,37 @@ const App: React.FC = () => {
       </section>
 
       <section id="contact" className={styles.section}>
-        <h2>&gt;&gt;&gt; # aaron_sinnott.contact</h2>
+        <h2># {t("contactTitle")}</h2>
         
-        <h3>&gt;&gt;&gt; aaron_sinnott.send_email(email, name, message)</h3>
+        <h3>&gt;&gt;&gt; {t("contactSendEmailHeader")}</h3>
         <form>
           <p className={styles.formFeedback}>{response}</p>
           <input
             type="email"
             value={email}
             id="email"
-            placeholder="Email"
+            placeholder={t("contactEmailField")}
             required
             onChange={e => setEmail(e.target.value)}
-            aria-label="Your Email"
+            aria-label={t("contactEmailField")}
           />
           <input
             type="text"
             value={name}
             id="name"
-            placeholder="Your name"
+            placeholder={t("contactNameField")}
             required
             onChange={e => setName(e.target.value)}
-            aria-label="Your name"
+            aria-label={t("contactNameField")}
           />
           <textarea
             value={message}
-            placeholder="Your message"
+            placeholder={t("contactMessageField")}
             onChange={e => setMessage(e.target.value)}
-            aria-label="Your message"
+            aria-label={t("contactMessageField")}
           ></textarea>
 
-          <input type="submit" value="Submit" onClick={e => handleSubmission(e)}></input>
+          <input type="submit" value={t("contactSubmitButton")} onClick={e => handleSubmission(e)}></input>
         </form>
         
       </section>

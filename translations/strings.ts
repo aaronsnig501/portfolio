@@ -40,7 +40,14 @@ const strings: Strings = {
     workHistoryParagraphFour: 'I left my role as a developer in Code Institute to move to Brazil to be with my fiance, but I continue to work with them as a mentor, helping students to build their projects to a professional standard, as well as offering career related advice, and mock interviewing them in preparation for real-world interviews.\\n',
     workHistoryParagraphFivePartOne: 'In addition to mentoring, I have also been working on ',
     workHistoryParagraphFivePartTwo: ', an app that I started to help myself to learn Portuguese, which I hope to be able to offer on a larger scale in the future.\\n',
-    workGithubHeader: 'aaron_sinnott.work["github"]'
+    workGithubHeader: 'aaron_sinnott.work["github"]',
+
+    contactTitle: 'aaron_sinnott.contact',
+    contactSendEmailHeader: 'aaron_sinnott.send_email(email, name, message)',
+    contactEmailField: 'Your Email',
+    contactNameField: 'Your Name',
+    contactMessageField: 'Your Message',
+    contactSubmitButton: 'Submit'
   },
   pt: {
     heroHeading: 'aaron_sinnott = Desenvolvedor()',
@@ -81,7 +88,14 @@ const strings: Strings = {
     workHistoryParagraphFour: 'Deixei minha função de desenvolvedor no Code Institute para me mudar para o Brasil para ficar com minha noiva, mas continuo trabalhando com eles como mentor, ajudando os alunos a desenvolver seus projetos com um padrão profissional, além de oferecer conselhos relacionados à carreira, e simulá-los em preparação para entrevistas no mundo real.\\n',
     workHistoryParagraphFivePartOne: 'Além de orientar, também tenho trabalhado no ',
     workHistoryParagraphFivePartTwo: ', um aplicativo que comecei a me ajudar a aprender português, que espero poder para oferecer em uma escala maior no futuro.\\n',
-    workGithubHeader: 'aaron_sinnott.trabalhos["github"]'
+    workGithubHeader: 'aaron_sinnott.trabalhos["github"]',
+
+    contactTitle: 'aaron_sinnott.contato',
+    contactSendEmailHeader: 'aaron_sinnott.enviar_email(email, nome, mensagem)',
+    contactEmailField: 'Seu Email',
+    contactNameField: 'Seu Nome',
+    contactMessageField: 'Sua Mensagem',
+    contactSubmitButton: 'Enviar'
   }
 }
 
