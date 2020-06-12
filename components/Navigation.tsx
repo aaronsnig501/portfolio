@@ -1,7 +1,10 @@
 import React from 'react'
+import withLocale from '../hocs/withLocale'
+import useTranslation from '../hooks/useTranslation'
 
 const NavigationBar: React.FC = () => {
   const [navText, setNavText] = React.useState('ls')
+  const { t } = useTranslation()
 
   const toggleMenu = () => {
     let links = document.getElementById('links')
@@ -32,11 +35,11 @@ const NavigationBar: React.FC = () => {
   return (
     <nav id="nav">
       <ul id="links" onClick={closeMenu}>
-        <li><a href="#home">~/</a></li>
-        <li><a href="#about">~/about</a></li>
-        <li><a href="#skills">~/skills</a></li>
-        <li><a href="#portfolio">~/portfolio</a></li>
-        <li><a href="#contact">~/contact</a></li>
+        <li><a href="#home">{t("navigationHome")}</a></li>
+        <li><a href="#about">{t("navigationAbout")}</a></li>
+        <li><a href="#skills">{t("navigationSkills")}</a></li>
+        <li><a href="#portfolio">{t("navigationWork")}</a></li>
+        <li><a href="#contact">{t("navigationContact")}</a></li>
       </ul>
 
       <span className="icon" onClick={toggleMenu}>

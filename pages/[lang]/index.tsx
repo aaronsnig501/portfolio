@@ -206,4 +206,4 @@ const App: React.FC = () => {
 }
 
 
-export default withLocale(App);
+export default withLocale(App)

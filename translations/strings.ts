@@ -5,6 +5,12 @@ const strings: Strings = {
     title: 'aaron_sinnott = Developer()',
     description: 'The portfolio site for Aaron Sinnott. Python, Django and React developer',
 
+    navigationHome: '~/',
+    navigationAbout: '~/about',
+    navigationSkills: '~/skills',
+    navigationWork: '~/work',
+    navigationContact: '~/contact',
+
     heroHeading: 'aaron_sinnott = Developer()',
     heroParagraph: 'aaron_sinnott.description = \'I build web stuff with Python, React and AWS!!!\'',
     
@@ -56,6 +62,12 @@ const strings: Strings = {
     title: 'aaron_sinnott = Desenvolvedor()',
     description: 'O site do portfólio do Aaron Sinnott. Desenvolvedor Python, Django e React',
 
+    navigationHome: '~/',
+    navigationAbout: '~/sobre',
+    navigationSkills: '~/habilidades',
+    navigationWork: '~/trabalhos',
+    navigationContact: '~/contato',
+
     heroHeading: 'aaron_sinnott = Desenvolvedor()',
     heroParagraph: 'aaron_sinnott.descrição = \'Eu construo coisas da web com Python, React e AWS!!!\'',
     
@@ -63,7 +75,7 @@ const strings: Strings = {
     aboutOverviewHeader: 'aaron_sinnott.sobre["visão_geral"]',
     aboutOverviewParagraphOne: 'Sou desenvolvedor Python do sudeste da Irlanda e moro atualmente em São Paulo.\\n',
     aboutOverviewParagraphTwo: 'Passei 7 anos trabalhando quase exclusivamente em Python e Django, com alguma experiência em .NET e, mais recentemente, em ReactJS.\\n',
-    aboutOverviewParagraphThree: 'Tenho uma paixão por trabalhar em toda a pilha e adoro aprender tudo o que posso sobre as melhores práticas em qualquer que seja a tecnologia.\\n',
+    aboutOverviewParagraphThree: 'Tenho uma paixão por trabalhar no fullstack e adoro aprender tudo o que posso sobre as melhores práticas em qualquer que seja a tecnologia.\\n',
     aboutOverviewParagraphFour: 'Adoro aprender sobre novos processos de desenvolvimento e a automação desses processos para me permitir ser o mais produtivo possível, sejam implantações automatizadas ou a geração automatizada de documentação.\\n',
     aboutOverviewParagraphFive: 'E além da computação, eu amo música e toco violão desde jovem. Gosto de criar e gravar novas músicas com os amigos!\\n',
     aboutTechnicalHeader: 'aaron_sinnott.sobre["técnico"]',
