@@ -2,7 +2,6 @@ import React from 'react'
 import fetch from 'node-fetch'
 import Typed from 'react-typed'
 import Head from 'next/head'
-import Router from 'next/router'
 import useSWR from 'swr'
 import styles from './index.module.scss'
 import NavigationBar from '../../components/Navigation'
@@ -38,16 +37,6 @@ const App: React.FC = () => {
   const { t } = useTranslation()
 
   React.useEffect(() => {}, [response])
-
-  React.useEffect(() => {
-    window.addEventListener('keyup', upHandler)
-  }, [])
-
-  const upHandler = e => {
-    if (e.altKey && e.key === 't') {
-      Router.push('/terminal')
-    }
-  }
 
   const handleSubmission = async e => {
     e.preventDefault()
